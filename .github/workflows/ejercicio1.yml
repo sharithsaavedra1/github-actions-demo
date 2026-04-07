@@ -1,0 +1,11 @@
+name: Ejercicio 1 - Saludo
+
+on: push
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Hola, este es mi primer workflow 🚀"
