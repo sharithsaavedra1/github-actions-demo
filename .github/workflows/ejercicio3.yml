@@ -1,0 +1,11 @@
+name: Ejercicio 3 - Info repo
+
+on: push
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar repo
+        run: echo $GITHUB_REPOSITORY
