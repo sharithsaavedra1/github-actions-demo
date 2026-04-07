@@ -1,0 +1,13 @@
+name: Ejercicio 2 - Contar archivos
+
+on: push
+
+jobs:
+  contar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Contar archivos
+        run: ls | wc -l
